@@ -18,8 +18,7 @@ TO CHANGE TIMEOUT LENGTH:
 
 var timeoutMinutes = 30
 
-
-HOW IT WORKS
+HOW THE SCRIPT WORKS:
 -----
 
 First:
@@ -31,11 +30,12 @@ Then, if there is a newer version:
 
 - Quit Interface
 - Download the new version
-- Mount the disk & copy it to /Applications
+- Mount the disk & copy the app to /Applications
 - Umount and cleanup.
 
 
 TODO:
+-----
 - package with node.js as utility
 - windows version(?)
 
