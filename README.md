@@ -8,10 +8,12 @@ https://highfidelity.com/
 
 How To Use:
 -----
+*if you don't have node installed, run ./bootstrap.sh to use the included node binaries*
 
 npm install
 
 node update.js
+
 
 To Change Interval Length
 -----
