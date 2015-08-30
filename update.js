@@ -15,13 +15,13 @@ var jsonfile = require('jsonfile')
 //get xml 
 //parse xml for current version number
 //if current version is greater than last version
-    //quit interface
-    //download interface
-    //attach dmg
-    //copy to applications
-    //detach dmg
-    //delete dmg
-    //write to last version
+//quit interface
+//download interface
+//attach dmg
+//copy to applications
+//detach dmg
+//delete dmg
+//write to last version
 
 var currentVersion;
 
@@ -48,7 +48,7 @@ function compareVersions(callback) {
     console.log('CURRENT /  LAST' + currentVersion + " / " + lastVersion)
     if (currentVersion > lastVersion) {
         console.log('THERE IS AN UPDATE, CONTINUE')
-
+        lastVersion = currentVersion;
         requestInterface();
     } else {
         console.log('NO UPDATE YET')
@@ -100,7 +100,7 @@ function writeToLastVersion(callback) {
     var obj = {
         last: currentVersion
     }
-    lastVersion = currentVersion;
+
     jsonfile.writeFile(file, obj, function(err) {
         if (err) {
             console.error(err)

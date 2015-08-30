@@ -1,4 +1,4 @@
-Autoupdater for Interface / node.js app for mac os x
+Autoupdater for Interface / A node.js script for Mac OS X
 -----
 
 Run this utility to check for and automatically install updates to the Mac version of the Interface client from High Fidelity.
@@ -6,19 +6,19 @@ Run this utility to check for and automatically install updates to the Mac versi
 https://highfidelity.com/
 
 
-HOW TO USE:
+How To Use:
 -----
 
 npm install
 
 node update.js
 
-TO CHANGE INTERVAL LENGTH:
+To Change Interval Length
 -----
 
 var intervalMinutes = 30
 
-HOW THE SCRIPT WORKS:
+How the Script Works:
 -----
 
 First:
@@ -34,7 +34,7 @@ Then, if there is a newer version:
 - Umount and cleanup.
 
 
-TODO:
+To-Do:
 -----
 - wait & notify / prompt for quit (if you're in the middle of something...?)
 - package with node.js
