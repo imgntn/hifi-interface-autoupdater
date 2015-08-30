@@ -47,7 +47,7 @@ function requestBuildsXML(callback) {
 }
 
 
-function parseXMLForVersion(callback) {
+function parseXMLForVersion() {
 
     var parser = new xml2js.Parser();
     parser.addListener('end', function(result) {
@@ -72,7 +72,7 @@ function parseXMLForVersion(callback) {
 }
 
 
-function compareVersions(callback) {
+function compareVersions() {
     console.log('CURRENT /  LAST' + currentVersion + " / " + lastVersion)
     if (currentVersion > lastVersion) {
         console.log('THERE IS AN UPDATE, CONTINUE')
@@ -87,7 +87,7 @@ function compareVersions(callback) {
 
 
 
-function writeToLastVersion(callback) {
+function writeToLastVersion() {
     var file = './lastVersion.json'
     var obj = {
         last: currentVersion
@@ -148,7 +148,7 @@ function mountDisk() {
 }
 
 
-function copyToApplications(versionNumber, callback) {
+function copyToApplications() {
     var volumePath = '"/Volumes/Interface Mac Build: ' + currentVersion + '"';
     var child = exec('cd ' + volumePath + ' && ls && cp -r interface.app/ /Applications/Interface.app ',
         function(error, stdout, stderr) {
@@ -162,7 +162,7 @@ function copyToApplications(versionNumber, callback) {
 
 }
 
-function detachDisk(callback) {
+function detachDisk() {
     var volumePath = '"/Volumes/Interface Mac Build: ' + currentVersion + '"';
     var child = exec('hdiutil detach ' + volumePath,
         function(error, stdout, stderr) {
@@ -180,7 +180,7 @@ function detachDisk(callback) {
 function deleteDisk() {
     var child = exec('rm ' + dmgName,
         function(error, stdout, stderr) {
-
+            console.log('done with cleanup for this checkß')
             if (error !== null) {
                 console.log('exec error: ' + error);
             }
