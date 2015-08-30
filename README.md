@@ -1,11 +1,12 @@
 Autoupdater for Interface / node.js app for mac os x
 -----
 
-Run this utility to check every 30 minutes for updates to the Interface 
+Run this utility to check for and automatically install updates to the Mac version of the Interface client.
 
 HOW TO USE:
 -----
 
+npm install
 node update.js
 
 HOW IT WORKS
