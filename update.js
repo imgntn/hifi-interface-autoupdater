@@ -100,7 +100,7 @@ function writeToLastVersion(callback) {
     var obj = {
         last: currentVersion
     }
-
+    lastVersion = currentVersion;
     jsonfile.writeFile(file, obj, function(err) {
         if (err) {
             console.error(err)
