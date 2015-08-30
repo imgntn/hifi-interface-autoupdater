@@ -23,7 +23,7 @@ var jsonfile = require('jsonfile')
 	//delete dmg
 	//write to last version
 
-var currentVersion = '';
+var currentVersion;
 
 var dmgName = 'interface.dmg';
 
@@ -57,7 +57,6 @@ function compareVersions(callback) {
 }
 
 function detachDisk(callback) {
-	var currentVersion='2918';
 	var volumePath = '"/Volumes/Interface Mac Build: ' + currentVersion + '"';
 	var child = exec('hdiutil detach ' + volumePath,
 		function(error, stdout, stderr) {

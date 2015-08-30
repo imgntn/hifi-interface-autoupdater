@@ -9,6 +9,7 @@ HOW TO USE:
 -----
 
 npm install
+
 node update.js
 
 HOW IT WORKS
