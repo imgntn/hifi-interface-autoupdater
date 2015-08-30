@@ -181,7 +181,8 @@ function start() {
     requestBuildsXML();
 }
 
-var timeOutLength = 1800000;
+var timeoutMinutes = 30;
+var timeoutLength = 60 * timeoutMinutes * 1000;
 
 setInterval(function() {
     console.log('check on interval')

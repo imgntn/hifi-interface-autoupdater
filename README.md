@@ -5,12 +5,19 @@ Run this utility to check for and automatically install updates to the Mac versi
 
 https://highfidelity.com/
 
+
 HOW TO USE:
 -----
 
 npm install
 
 node update.js
+
+TO CHANGE TIMEOUT LENGTH:
+-----
+
+var timeoutMinutes = 30
+
 
 HOW IT WORKS
 -----
