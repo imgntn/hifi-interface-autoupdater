@@ -1,7 +1,7 @@
-Autoupdater for Interface / A node.js script for Mac OS X
+Autoupdater for Interface (OS X)
 -----
 
-Run this utility to check for and automatically install updates to the Mac version of the Interface client from High Fidelity.
+Run this node.js utility to check for and automatically install updates to the Mac version of the Interface client from High Fidelity.
 
 https://highfidelity.com/
 
