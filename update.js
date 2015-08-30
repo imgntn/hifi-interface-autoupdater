@@ -180,7 +180,7 @@ function detachDisk() {
 function deleteDisk() {
     var child = exec('rm ' + dmgName,
         function(error, stdout, stderr) {
-            console.log('done with cleanup for this checkß')
+            console.log('done with cleanup for this check')
             if (error !== null) {
                 console.log('exec error: ' + error);
             }
