@@ -36,6 +36,7 @@ Then, if there is a newer version:
 
 TODO:
 -----
-- package with node.js as utility
-- windows version(?)
-
+- wait & notify / prompt for quit (if you're in the middle of something...?)
+- package with node.js
+- menu level utility?
+- windows version?
