@@ -15,13 +15,13 @@ var jsonfile = require('jsonfile')
 //get xml 
 //parse xml for current version number
 //if current version is greater than last version
-//quit interface
-//download interface
-//attach dmg
-//copy to applications
-//detach dmg
-//delete dmg
-//write to last version
+    //quit interface
+    //download interface
+    //attach dmg
+    //copy to applications
+    //detach dmg
+    //delete dmg
+    //write to last version
 
 var currentVersion;
 
@@ -48,7 +48,7 @@ function compareVersions(callback) {
     console.log('CURRENT /  LAST' + currentVersion + " / " + lastVersion)
     if (currentVersion > lastVersion) {
         console.log('THERE IS AN UPDATE, CONTINUE')
-        quitInterface();
+
         requestInterface();
     } else {
         console.log('NO UPDATE YET')
@@ -118,6 +118,7 @@ function requestInterface() {
     var r = request('https://highfidelity.com/download/mac/' + currentVersion).pipe(fs.createWriteStream('interface.dmg'))
     r.on('finish', function() {
         console.log('FINISHED DOWNLOADING!')
+        quitInterface();
         mountDisk();
     })
 }
