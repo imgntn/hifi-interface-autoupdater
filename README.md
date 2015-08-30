@@ -13,10 +13,10 @@ npm install
 
 node update.js
 
-TO CHANGE TIMEOUT LENGTH:
+TO CHANGE INTERVAL LENGTH:
 -----
 
-var timeoutMinutes = 30
+var intervalMinutes = 30
 
 HOW THE SCRIPT WORKS:
 -----

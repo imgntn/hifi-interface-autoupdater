@@ -181,13 +181,13 @@ function start() {
     requestBuildsXML();
 }
 
-var timeoutMinutes = 30;
-var timeoutLength = 60 * timeoutMinutes * 1000;
+var intervalMinutes = 30;
+var intervalLength = 60 * intervalMinutes * 1000;
 
 setInterval(function() {
     console.log('check on interval')
     start();
-}, timeOutLength);
+}, intervalLength);
 
 console.log('initial check')
 start();
