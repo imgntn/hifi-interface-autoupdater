@@ -15,12 +15,12 @@ npm install
 node update.js
 
 
-To Change Interval Length
+To Change Interval Length:
 -----
 
-var intervalMinutes = 30
+var intervalMinutes = 30; 
 
-How the Script Works:
+How the Script Works
 -----
 
 First:
@@ -30,8 +30,8 @@ First:
 
 Then, if there is a newer version:
 
-- Quit Interface
 - Download the new version
+- Quit Interface
 - Mount the disk & copy the app to /Applications
 - Umount and cleanup.
 
