@@ -131,6 +131,19 @@ function quitInterface() {
 }
 
 
+function openInterface() {
+    var openString ='open "/Applications/interface.app/"'
+
+    var child = exec(openString,
+        function(error, stdout, stderr) {
+
+            if (error !== null) {
+                console.log('exec error: ' + error);
+            }
+        });
+
+}
+
 
 function mountDisk() {
     var child = exec('hdiutil attach ' + dmgName,
@@ -185,6 +198,7 @@ function deleteDisk() {
                 console.log('exec error: ' + error);
             }
         });
+    openInterface();
 
 }
 
