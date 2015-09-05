@@ -34,6 +34,7 @@ Then, if there is a newer version:
 - Quit Interface
 - Mount the disk & copy the app to /Applications
 - Umount and cleanup.
+- Reopen Interface
 
 
 To-Do:
